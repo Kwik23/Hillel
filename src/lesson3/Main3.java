@@ -29,6 +29,7 @@ public class Main3 {
         randomArray(10);
 
     }
+
     private static void forFrom1to99() {
         for (int i = 1; i <= 99; i++) {
             if (i != 2) {
