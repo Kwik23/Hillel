@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class HW3 {
 
-    public void forFrom1to99() {
+    private void forFrom1to99() {
         for (int i = 1; i <= 99; i++) {
             if (i != 2) {
                 System.out.println(i);
@@ -13,7 +13,7 @@ public class HW3 {
         }
     }
 
-    public void forFactorial(int n) {
+    private void forFactorial(int n) {
         int factorial = 1;
         for (int i = 1; i <= n; i++) {
             factorial *= i;
@@ -21,7 +21,7 @@ public class HW3 {
         System.out.println(factorial);
     }
 
-    public void whileFrom1to99() {
+    private void whileFrom1to99() {
         int i = 1;
         while (i <= 99) {
             System.out.println(i);
@@ -29,7 +29,7 @@ public class HW3 {
         }
     }
 
-    public void whileFactorial(int n) {
+    private void whileFactorial(int n) {
         int factorial = 1;
         int i = 1;
         while (i <= n) {
@@ -39,7 +39,7 @@ public class HW3 {
         System.out.println(factorial);
     }
 
-    public void doWhileFrom1to99() {
+    private void doWhileFrom1to99() {
         int i = 1;
         do {
             if (i % 2 == 1) {
@@ -50,7 +50,7 @@ public class HW3 {
 
     }
 
-    public void doWhileFactorial(int n) {
+    private void doWhileFactorial(int n) {
         int factorial = 1;
         int i = 1;
         do {
@@ -61,7 +61,7 @@ public class HW3 {
         System.out.println(factorial);
     }
 
-    public void degree(int x, int n) {
+    private void degree(int x, int n) {
         int result = 1;
         for (int i = 1; i <= n; i++) {
             result *= x;
@@ -69,7 +69,7 @@ public class HW3 {
         System.out.println(result);
     }
 
-    public void sequence() {
+    private void sequence() {
         int n = 1;
         int num = 0;
         while (n <= 10) {
@@ -79,7 +79,7 @@ public class HW3 {
         }
     }
 
-    public void table(int n) {
+    private void table(int n) {
 
         int i = 1;
         while (i <= 10) {
@@ -88,7 +88,7 @@ public class HW3 {
         }
     }
 
-    public void firstTenOddNumber() {
+    private void firstTenOddNumber() {
         int[] oddNum = new int[10];
 
         for (int i = 0; i < 10; i++) {
@@ -103,7 +103,7 @@ public class HW3 {
         }
     }
 
-    public void randomArray(int n) {
+    private void randomArray(int n) {
 
         int[] arr = generateRandomArray(n);
         printArray(arr);
@@ -117,7 +117,7 @@ public class HW3 {
         printArray(arr);
     }
 
-    public static int[] generateRandomArray(int n) {
+    private static int[] generateRandomArray(int n) {
         Random random = new Random();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
@@ -126,7 +126,7 @@ public class HW3 {
         return arr;
     }
 
-    public static int findMaxValue(int[] arr) {
+    private static int findMaxValue(int[] arr) {
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] > max) {
@@ -136,7 +136,7 @@ public class HW3 {
         return max;
     }
 
-    public static int findMinValue(int[] arr) {
+    private static int findMinValue(int[] arr) {
         int min = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] < min) {
@@ -146,18 +146,18 @@ public class HW3 {
         return min;
     }
 
-    public static void sortAscending(int[] arr) {
+    private static void sortAscending(int[] arr) {
         Arrays.sort(arr);
         System.out.print("Task 11\nArray ascending: ");
     }
 
-    public static void sortDescending(int[] arr) {
+    private static void sortDescending(int[] arr) {
         Arrays.sort(arr);
         reverseArray(arr);
         System.out.print("Array descending: ");
     }
 
-    public static void reverseArray(int[] arr) {
+    private static void reverseArray(int[] arr) {
         for (int i = 0; i < arr.length / 2; i++) {
             int temp = arr[i];
             arr[i] = arr[arr.length - 1 - i];
@@ -165,7 +165,7 @@ public class HW3 {
         }
     }
 
-    public static void printArray(int[] arr) {
+    private static void printArray(int[] arr) {
         System.out.print(" ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
