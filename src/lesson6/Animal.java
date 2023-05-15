@@ -1,6 +1,7 @@
 package src.lesson6;
 
 public class Animal {
+
     private String name;
     private int distance;
     private int swim;

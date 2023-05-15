@@ -1,6 +1,7 @@
 package src.lesson6;
 
 public class Cat extends Animal {
+
     static int count = 0;
     private int distance;
 
