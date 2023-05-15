@@ -5,13 +5,6 @@ public class Car {
     private double remainingFuel;
     private double consumptionPer100km;
 
-//    public Car(double volumeOfTheTank, double remainingFuel, double consumptionPer100km) {
-//
-//        this.volumeOfTheTank = volumeOfTheTank;
-//        this.remainingFuel = remainingFuel;
-//        this.consumptionPer100km = consumptionPer100km;
-//    }
-
     public double getVolumeOfTheTank() {
         return this.volumeOfTheTank;
     }
