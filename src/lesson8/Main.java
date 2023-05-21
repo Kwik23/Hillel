@@ -8,15 +8,15 @@ public class Main {
         collection.add("Two");
         collection.add("Three");
 
-        System.out.println(collection.get(0)); // Выводит "One"
-        System.out.println(collection.get(2)); // Выводит "Three"
+        System.out.println(collection.get(0));
+        System.out.println(collection.get(2));
 
         collection.delete(1);
 
-        System.out.println(collection.get(1)); // Выводит "Three"
+        System.out.println(collection.get(1));
 
         collection.add(1, "New");
 
-        System.out.println(collection.get(1)); // Выводит "New"
+        System.out.println(collection.get(1));
     }
 }
