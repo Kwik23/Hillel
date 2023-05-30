@@ -27,6 +27,7 @@ public class Main {
             System.out.println("Запис не знайдено за ім'ям: " + searchName);
         }
 
+        
         String searchNameAll = "Олександр";
         List<Entry> foundEntries = phonebook.findAll(searchNameAll);
         if (foundEntries != null) {
