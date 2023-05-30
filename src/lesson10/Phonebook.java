@@ -25,7 +25,7 @@ public class Phonebook {
 
     public Entry find(String name) {
         if (phonebook.containsKey(name)) {
-            String phoneNumber = phonebook.get(name).get(0); // Отримуємо перший номер телефону
+            String phoneNumber = phonebook.get(name).get(0);
             return new Entry(name, phoneNumber);
         }
         return null;
